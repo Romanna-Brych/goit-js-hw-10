@@ -12,6 +12,12 @@ body {
   color: #2e2f42;
 }
 
+.timer-wraper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .timer-input {
   font-family: inherit;
   font-size: 16px;
@@ -24,7 +30,6 @@ body {
   border: 1px solid #808080;
   outline: none;
   border-radius: 4px;
-  margin-right: 4px;
   transition: border-color, color, background-color;
 }
 

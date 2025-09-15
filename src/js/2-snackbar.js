@@ -11,7 +11,7 @@ formEl.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-  const delayValue = delayInputEl.value;
+  const delayValue = delayInputEl.value.replace(/[^\d]/g, '');
 
   const promise = new Promise((resolve, reject) => {
     if (fulfilledRadio.checked) {
