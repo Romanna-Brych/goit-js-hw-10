@@ -1,6 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import '../css/iziToast-custom.css';
+import spriteUrl from '../img/sprite.svg';
 
 const formEl = document.querySelector('.form');
 const delayInputEl = document.querySelector('input[name="delay"]');
@@ -41,7 +42,7 @@ function handleSubmit(event) {
           if (iconEl) {
             iconEl.innerHTML = `
         <svg class="icon-custom">
-          <use href="./img/sprite.svg#icon-Group"></use>
+          <use href="${spriteUrl}#icon-Group"></use>
         </svg>`;
           }
 
@@ -49,7 +50,7 @@ function handleSubmit(event) {
           customClose.classList.add('iziToast-close-custom');
           customClose.innerHTML = `
         <svg class="icon-custom-close">
-          <use xlink:href="./img/sprite.svg#icon-Vector-3"></use>
+          <use href="${spriteUrl}#icon-Vector-3"></use>
         </svg>`;
           customClose.addEventListener('click', () => {
             iziToast.hide({}, toast);
@@ -75,7 +76,7 @@ function handleSubmit(event) {
           if (iconEl) {
             iconEl.innerHTML = `
         <svg class="icon-custom">
-          <use href="./img/sprite.svg#icon-bi_x-octagon"></use>
+          <use href="${spriteUrl}#icon-bi_x-octagon"></use>
         </svg>`;
           }
 
@@ -83,7 +84,7 @@ function handleSubmit(event) {
           customClose.classList.add('iziToast-close-custom');
           customClose.innerHTML = `
         <svg class="icon-custom-close">
-          <use xlink:href="./img/sprite.svg#icon-Vector-3"></use>
+          <use href="${spriteUrl}#icon-Vector-3"></use>
         </svg>`;
           customClose.addEventListener('click', () => {
             iziToast.hide({}, toast);

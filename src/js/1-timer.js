@@ -3,6 +3,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import '../css/iziToast-custom.css';
+import spriteUrl from '../img/sprite.svg';
 
 const inputEl = document.querySelector("input[type='text']");
 const btnEl = document.querySelector('.btn-js');
@@ -39,7 +40,7 @@ const options = {
           if (iconEl) {
             iconEl.innerHTML = `
         <svg class="icon-custom">
-          <use href="./img/sprite.svg#icon-bi_x-octagon"></use>
+          <use href="${spriteUrl}#icon-bi_x-octagon"></use>
         </svg>`;
           }
 
@@ -47,7 +48,7 @@ const options = {
           customClose.classList.add('iziToast-close-custom');
           customClose.innerHTML = `
         <svg class="icon-custom-close">
-          <use xlink:href="./img/sprite.svg#icon-Vector-3"></use>
+          <use href="${spriteUrl}#icon-Vector-3"></use>
         </svg>`;
           customClose.addEventListener('click', () => {
             iziToast.hide({}, toast);
