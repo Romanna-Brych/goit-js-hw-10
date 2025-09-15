@@ -41,7 +41,7 @@ function handleSubmit(event) {
           if (iconEl) {
             iconEl.innerHTML = `
         <svg class="icon-custom">
-          <use href="../img/sprite.svg#icon-Group"></use>
+          <use href="./img/sprite.svg#icon-Group"></use>
         </svg>`;
           }
 
@@ -49,7 +49,7 @@ function handleSubmit(event) {
           customClose.classList.add('iziToast-close-custom');
           customClose.innerHTML = `
         <svg class="icon-custom-close">
-          <use xlink:href="../img/sprite.svg#icon-Vector-3"></use>
+          <use xlink:href="./img/sprite.svg#icon-Vector-3"></use>
         </svg>`;
           customClose.addEventListener('click', () => {
             iziToast.hide({}, toast);
@@ -75,7 +75,7 @@ function handleSubmit(event) {
           if (iconEl) {
             iconEl.innerHTML = `
         <svg class="icon-custom">
-          <use href="../img/sprite.svg#icon-bi_x-octagon"></use>
+          <use href="./img/sprite.svg#icon-bi_x-octagon"></use>
         </svg>`;
           }
 
@@ -83,7 +83,7 @@ function handleSubmit(event) {
           customClose.classList.add('iziToast-close-custom');
           customClose.innerHTML = `
         <svg class="icon-custom-close">
-          <use xlink:href="../img/sprite.svg#icon-Vector-3"></use>
+          <use xlink:href="./img/sprite.svg#icon-Vector-3"></use>
         </svg>`;
           customClose.addEventListener('click', () => {
             iziToast.hide({}, toast);
