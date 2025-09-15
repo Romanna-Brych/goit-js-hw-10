@@ -11,6 +11,7 @@ body {
 
 .form {
   width: 360px;
+  max-height: 78px;
   display: flex;
   flex-direction: column;
 }
