@@ -10,6 +10,10 @@
   .container {
     max-width: 768px;
   }
+
+  .timer-input {
+    width: 272px;
+  }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
